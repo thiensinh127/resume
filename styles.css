@@ -1,0 +1,646 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.nav-icons {
+    display: flex;
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.nav-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-icon:hover {
+    color: #ff7e5f;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/* Default active state for home when page loads */
+.nav-icon {
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.nav-icon.active {
+    color: #ff7f50;
+}
+
+
+
+
+/* Main Content */
+.content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Profile Card */
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    max-height: fit-content;
+    position: sticky;
+    top: 40px;
+}
+
+.profile-image-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.fire-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.profile-name {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile-description {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e74c3c;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+/* Info Section */
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section {
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 800;
+    color: #333;
+    line-height: 1;
+}
+
+.info-description {
+    max-width: 500px;
+    margin-bottom: 40px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* Stats */
+.stats-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #aaa;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+/* Skill Cards */
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill-card {
+    flex: 1;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.skill-card.orange {
+    background-color: #e74c3c;
+}
+
+.skill-card.green {
+    background-color: #c8ff00;
+}
+
+.skill-group {
+    margin-bottom: 60px;
+    font-size: 24px;
+}
+
+.skill-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.skill-card.orange .skill-content {
+    color: white;
+}
+
+.skill-card.green .skill-content,
+.skill-card.green .skill-group {
+    color: #000;
+}
+
+.skill-card h3 {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.skill-icons {
+    padding-top: 20px;
+    display: flex;
+    gap: 40px;
+    font-size: 50px;
+    flex-wrap: wrap;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.download-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.action-buttons a {
+    text-decoration: none;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 120px;
+}
+
+.experience-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+.title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight {
+    color: #ffffff;
+}
+
+.muted {
+    color: #333333;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experience-item h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.experience-item p {
+    color: #666666;
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.date {
+    color: #666666;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 120px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    padding: 20px 15px;
+    text-decoration: none;
+
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-image {
+    padding-top: 30px;
+    width: 300px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+.project-item:hover {
+    background-color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project-icon {
+    color: #e74c3c;
+
+}
+
+.project-icon i {
+    transform: rotate(45deg);
+    font-size: 20px;
+}
+
+.project-item h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.project-item p {
+    color: #666666;
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+.skill-list {
+    display: flex;
+    gap: 0.5rem;
+
+    .skill-item {
+        width: 50%;
+
+        .skill-icon {
+            font-size: 80px;
+        }
+    }
+}
+
+/* Base Animation Classes */
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 0.8s ease forwards;
+}
+
+.animate-slide-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 0.8s ease forwards;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* For elements that will animate on scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        padding-bottom: 120px;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 350px;
+        position: relative !important;
+    }
+
+    .info-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-section {
+        text-align: center;
+    }
+
+    .main-title,
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .experience {
+        gap: 3rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .experience-item h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-title,
+    .sub-title {
+        font-size: 32px;
+    }
+
+    .experience {
+        gap: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .experience-item {
+        gap: 0.25rem;
+    }
+}
