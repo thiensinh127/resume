@@ -370,6 +370,11 @@ body {
     max-width: 600px;
 }
 
+.experience-item span {
+    color: #666666;
+    font-size: 0.875rem;
+}
+
 .date {
     color: #666666;
     font-size: 0.875rem;
