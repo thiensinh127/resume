@@ -1,325 +1,427 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thien Sinh - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-
-<body>
-    <div class="container" id="top">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-icons">
-                <a href="#top" class="nav-icon animate-fade-in" style="animation-delay: 0.1s;">
-                    <i class="fas fa-home"></i>
-                </a>
-                <a href="#experience-section" class="nav-icon animate-fade-in" style="animation-delay: 0.2s;">
-                    <i class="fas fa-folder"></i>
-                </a>
-                <a href="#projects-section" class="nav-icon animate-fade-in" style="animation-delay: 0.3s;">
-                    <i class="fas fa-briefcase"></i>
-                </a>
-
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tran Ba Thien Sinh -- Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <section class="hero-section" id="top">
+        <nav class="hero-nav fade-in" data-y="-20">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="mailto:thiensinh127@gmail.com">Contact</a>
         </nav>
 
-        <section class="content">
-            <!-- Profile Card -->
-            <div class="profile">
-                <div class="profile-card animate-fade-in-up">
-                    <div class="profile-image-container">
-                        <div class="profile-image">
-                            <img src="assets/wallpaper.jpg" alt="avatar">
-                        </div>
-                    </div>
-                    <h2 class="profile-name">Tran Ba Thien Sinh</h2>
-                    <p class="profile-description"> Passionate about creating seamless user experiences.
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://github.com/thiensinh127" class="social-icon animate-fade-in"
-                            style="animation-delay: 0.1s;"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://www.linkedin.com/in/tran-thien-sinh" class="social-icon animate-fade-in"
-                            style="animation-delay: 0.2s;"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="mailto:thiensinh127@gmail.com" class="social-icon animate-fade-in"
-                            style="animation-delay: 0.4s;"><i class="fas fa-envelope"></i></a>
-                        <a href="#" class="social-icon animate-fade-in" style="animation-delay: 0.3s;"><i
-                                class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Info Section -->
-            <div>
-                <div class="info-section">
-                    <div class="title-section animate-slide-in-left">
-                        <h1 class="main-title">FRONTEND</h1>
-                        <h1 class="sub-title">DEVELOPER</h1>
-                    </div>
-                    <p class="info-description animate-fade-in-up">
-                        Frontend Developer with 4+ years of experience building enterprise web applications serving
-                        1,000+ users.
-                        Strong experience with React, Next.js, and micro-frontend architecture.
-                        Comfortable owning frontend features end-to-end, working closely with backend and product teams
-                        to deliver stable, maintainable, and
-                        scalable user interfaces for complex business domains such as HR systems.
-                    </p>
-
-                    <!-- Stats -->
-                    <div class="stats-container">
-                        <div class="stat-item animate-fade-in-up" style="animation-delay: 0.1s;">
-                            <h2 class="stat-number" data-count="4">0</h2>
-                            <p class="stat-label">YEARS OF<br>EXPERIENCE</p>
-                        </div>
-                        <div class="stat-item animate-fade-in-up" style="animation-delay: 0.2s;">
-                            <h2 class="stat-number" data-count="5">0</h2>
-                            <p class="stat-label">PROJECTS<br>COMPLETED</p>
-                        </div>
-                        <div class="stat-item animate-fade-in-up" style="animation-delay: 0.3s;">
-                            <h2 class="stat-number" data-count="2">0</h2>
-                            <p class="stat-label">WORLDWIDE<br>CLIENTS</p>
-                        </div>
-                    </div>
-
-                    <!-- Skill Cards -->
-                    <div class="skills-container">
-                        <div class="skill-card orange animate-slide-in-up">
-                            <div class="skill-group"><i class="fas fa-window-maximize"></i></div>
-                            <div class="skill-content">
-                                <h3>HTML, CSS, SCSS, JavaScript (ES6+), REACTJS,</br> REDUX, REACT QUERY, ZUSTAND,
-                                    RESTful API,
-                                    TYPESCRIPT,
-                                    UI/UX Basics </h3>
-                            </div>
-                        </div>
-                        <div class="skill-card green animate-slide-in-up" style="animation-delay: 0.2s;">
-                            <div class="skill-group"><i class="fas fa-layer-group"></i></div>
-                            <div class="skill-content">
-                                <h3>GIT, GITHUB/GITLAB, STORYBOOK, WEBPACK, VITE, BABEL</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Section -->
-                <div class="container" id="experience-section">
-                    <section class="experience">
-                        <h1 class="title animate-slide-in-left">
-                            <span class="main-title">OVER 4 YEARS</span>
-                            <span class="sub-title">EXPERIENCE</span>
-                        </h1>
-
-                        <div class="experience-sub animate-fade-in-up">
-                            <div>Terralogic LLC </div>
-                            <p>Oct 2021 - Present</p>
-                        </div>
-
-                        <div class="experience-list">
-
-                            <div class="experience-item animate-on-scroll">
-                                <h2>Company Setup Module</h2>
-                                <p>Developed
-                                    Company Setup Module to configure organizational structure, roles, and default
-                                    settings for
-                                    new tenants during onboarding.</p>
-                                <span>Tech: Reactjs, Tailwindcss, Zustand, Typescript</span>
-                                <span class="date">Feb 2025 - Present</span>
-                            </div>
-
-                            <div class="experience-item animate-on-scroll">
-                                <h2>Ticket Management</h2>
-                                <p>Developed a robust platform to optimize internal operations by enabling employees to
-                                    submit, track, and
-                                    resolve queries efficiently. The system addresses payroll inquiries, IT support
-                                    requests, HR concerns, and
-                                    system-related issues like technical problems and software bugs. By centralizing
-                                    issue management, it
-                                    improves communication, ensures transparency, and fosters accountability in
-                                    resolving employee and
-                                    organizational concerns.</p>
-                                <span>Tech: Nextjs, Tailwindcss, Redux Toolkit Query, Typescript</span>
-
-                                <span class="date">Oct 2024 - Feb 2025</span>
-                            </div>
-
-                            <div class="experience-item animate-on-scroll">
-                                <h2>Timesheet Management</h2>
-                                <p>Built a comprehensive tool to record and manage employee working hours, project
-                                    contributions, and
-                                    productivity metrics. Designed to simplify time tracking and support payroll
-                                    processing and performance
-                                    evaluation.</p>
-                                <span>Tech: Reactjs, Ant Design, SCSS, Redux Saga</span>
-                                <span class="date">Jun 2023 - Oct 2024</span>
-                            </div>
-
-                            <div class="experience-item animate-on-scroll">
-                                <h2>Admin Portal</h2>
-                                <p>A comprehensive platform designed for HR administrators to efficiently manage
-                                    employee data,
-                                    organizational policies, and system configurations. The portal empowers HR teams to
-                                    maintain accurate
-                                    records, streamline workflows, and enforce role-based access control for secure
-                                    system management.</p>
-                                <span>Tech: Nextjs, Tailwindcss, Redux Toolkit Query, Typescript</span>
-
-                                <span class="date">Dec 2023 - Jun 2024</span>
-                            </div>
-
-                            <div class="experience-item animate-on-scroll">
-                                <h2>Timeoff Management</h2>
-                                <p>Engineered a seamless solution for managing employee leave requests and approvals.
-                                    The system
-                                    simplifies the leave application process while ensuring transparency and efficient
-                                    tracking of leave
-                                    balances.</p>
-                                <span>Tech: Reactjs, Ant Design, SCSS, Redux Saga</span>
-
-                                <span class="date">May 2022 - Dec 2023</span>
-                            </div>
-
-                            <div class="experience-item animate-on-scroll">
-                                <h2>Employee Management</h2>
-                                <p>Developed a centralized platform to provide employees with quick and efficient access
-                                    to organizational
-                                    contact information and hierarchy. The system fosters better collaboration and
-                                    transparency within the
-                                    organization by offering a clear view of team structures and reporting lines.</p>
-                                <span>Tech: Nextjs, Tailwindcss, Redux Toolkit Query, Typescript</span>
-
-                                <span class="date">Oct 2021 - May 2022</span>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Personal Projects -->
-                <div class="container" id="projects-section">
-                    <section class="projects">
-                        <h1 class="title animate-slide-in-left">
-                            <span class="main-title">PERSONAL</span>
-                            <span class="sub-title">PROJECTS</span>
-                        </h1>
-
-                        <div class="projects-list">
-                            <a class="project-item animate-on-scroll" target="_blank"
-                                href="https://snippets-platform.vercel.app/">
-                                <div class="project-content">
-                                    <h2>CodeShare demo</h2>
-                                    <p>
-                                        A web-based platform that allows developers to create, manage, and share
-                                        reusable code snippets with syntax highlighting and language tagging.
-                                    </p>
-                                    <span class="date">
-                                        Tech stack: Next.js, TypeScript, Tailwind CSS, Nodejs, Mongodb
-                                    </span>
-                                    <div class="project-image">
-                                        <img src="assets/code-share.png" alt="CodeShare code snippet sharing platform">
-                                    </div>
-                                </div>
-                                <div class="project-icon">
-                                    <i class="fa-solid fa-arrow-up"></i>
-                                </div>
-                            </a>
-
-                            <a class="project-item animate-on-scroll" target="_blank"
-                                href="https://order-food-silk-rho.vercel.app/">
-                                <div class="project-content">
-                                    <h2>Foodelivery Demo</h2>
-                                    <p>A responsive and visually appealing food delivery demo application designed to
-                                        showcase a modern UI/UX for online food ordering.</p>
-                                    <span class="date"> Built with React.js, Tailwind CSS, Nodejs, Mongodb.</span>
-                                    <div class="project-image">
-                                        <img src="assets/food-delivery.png" alt="food-image">
-                                    </div>
-                                </div>
-                                <div class="project-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                            </a>
-
-                            <a class="project-item animate-on-scroll" target="_blank"
-                                href="https://snapgram-eight-lyart.vercel.app/">
-                                <div class="project-content">
-                                    <h2>SnapGram Demo</h2>
-                                    <p>SnapGram is a social media application that allows users to create, edit, like,
-                                        and save posts. The app is designed to provide a simple and seamless user
-                                        experience, making it easy for people to share their moments.</p>
-                                    <span class="date"> Built with React.js, Tailwind CSS, and Appwrite.</span>
-                                    <div class="project-image">
-                                        <img src="assets/snapgram.png" alt="snapgram">
-                                    </div>
-                                </div>
-                                <div class="project-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                            </a>
-
-                            <a class="project-item animate-on-scroll" target="_blank"
-                                href="https://airbnb-demo-nu-pink.vercel.app/">
-                                <div class="project-content">
-                                    <h2>Airbnb clone</h2>
-                                    <p>Airbnb Clone is an online booking platform that replicates a subset of Airbnb's
-                                        core features, allowing users to list, search, and book accommodations. The
-                                        application focuses on delivering a seamless user experience while emulating
-                                        essential functionalities such as property listings, filtering options, and
-                                        booking flow.</p>
-                                    <span class="date">Built with Next.js 13 App Router, Tailwind CSS, and Prisma,
-                                        MongoDB, Next Auth 2023.</span>
-                                    <div class="project-image">
-                                        <img src="assets/airbnb.png" alt="airbnb">
-                                    </div>
-                                </div>
-                                <div class="project-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                            </a>
-
-                            <a class="project-item animate-on-scroll" target="_blank"
-                                href="https://camp-booking-kjsn.vercel.app/">
-                                <div class="project-content">
-                                    <h2>Camp Booking Demo</h2>
-                                    <p>Camp Booking Template is a booking interface designed for campgrounds, allowing
-                                        users to easily search, reserve, and manage their camping experiences. The
-                                        template features a modern design, optimized user experience, and
-                                        functionalities for quick booking, detailed information display, and a
-                                        user-friendly interface.</p>
-                                    <span class="date">Built with Next.js, Tailwind CSS</span>
-                                    <div class="project-image">
-                                        <img src="assets/camp.png" alt="camp">
-                                    </div>
-                                </div>
-                                <div class="project-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                            </a>
-
-                            <a class="project-item animate-on-scroll" href="https://animate-gsap.vercel.app/">
-                                <div class="project-content">
-                                    <h2>GSAP Animate</h2>
-                                    <p>GSAP Animate is a web project showcasing smooth and interactive animations using
-                                        GSAP (GreenSock Animation Platform). The project enhances user experience with
-                                        dynamic transitions, parallax effects, and scroll-based animations, creating a
-                                        visually engaging and responsive interface.</p>
-                                    <span class="date">Built with React.js, Tailwind CSS, and GSAP Animate</span>
-                                    <div class="project-image">
-                                        <img src="assets/gsap.png" alt="gsap">
-                                    </div>
-                                </div>
-                                <div class="project-icon"><i class="fa-solid fa-arrow-up"></i></div>
-                            </a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
-
-        <!-- Action Buttons -->
-        <div class="action-buttons">
-            <a class="download-btn animate-pulse" href="assets/TranBaThienSinh_CV_Frontend.pdf">Download Resume</a>
+        <div class="hero-title-wrap fade-in" data-delay="150" data-y="40">
+          <h1 class="hero-heading hero-title">Hi, I'm Sinh</h1>
         </div>
-    </div>
 
+        <div class="hero-portrait fade-in" data-delay="600" data-y="30">
+          <div
+            class="magnet"
+            data-padding="150"
+            data-strength="3"
+            data-active-transition="transform 0.3s ease-out"
+            data-inactive-transition="transform 0.6s ease-in-out"
+          >
+            <img src="assets/profile-avatar-3d.png" alt="Tran Ba Thien Sinh 3D avatar" />
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <p class="hero-copy fade-in" data-delay="350" data-y="20">
+            frontend developer building scalable React & Next.js products
+          </p>
+          <div class="hero-actions fade-in" data-delay="500" data-y="20">
+            <a class="contact-button" href="mailto:thiensinh127@gmail.com"
+              >Contact Me</a
+            >
+            <a class="text-link" href="assets/TranBaThienSinh_CV_Frontend.pdf"
+              >Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee-section" aria-label="Selected project previews">
+        <div class="marquee-row" data-direction="right">
+          <div class="marquee-track" id="marquee-row-one"></div>
+        </div>
+        <div class="marquee-row" data-direction="left">
+          <div class="marquee-track" id="marquee-row-two"></div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <img
+          class="about-shape moon fade-in"
+          data-delay="100"
+          data-x="-80"
+          data-y="0"
+          data-duration="900"
+          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png"
+          alt=""
+        />
+        <img
+          class="about-shape object-left fade-in"
+          data-delay="250"
+          data-x="-80"
+          data-y="0"
+          data-duration="900"
+          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/p59_1.4659672e.png"
+          alt=""
+        />
+        <img
+          class="about-shape lego fade-in"
+          data-delay="150"
+          data-x="80"
+          data-y="0"
+          data-duration="900"
+          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/lego_icon-1.703bb594.png"
+          alt=""
+        />
+        <img
+          class="about-shape object-right fade-in"
+          data-delay="300"
+          data-x="80"
+          data-y="0"
+          data-duration="900"
+          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png"
+          alt=""
+        />
+
+        <div class="about-content">
+          <h2 class="hero-heading section-title fade-in" data-y="40">
+            Frontend Developer
+          </h2>
+          <p class="animated-text" id="about-text">
+            Frontend Developer with 4+ years of experience building enterprise
+            web applications serving 1,000+ users. Strong experience with React,
+            Next.js, TypeScript, Tailwind CSS and micro-frontend architecture.
+            Comfortable owning frontend features end-to-end, working closely
+            with backend and product teams to deliver stable, maintainable, and
+            scalable user interfaces for complex business domains such as HR
+            systems.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://github.com/thiensinh127"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/tran-thien-sinh"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn</a
+            >
+            <a href="mailto:thiensinh127@gmail.com">Email</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills">
+        <h2 class="hero-heading section-title fade-in" data-y="40">Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-panel fade-in" data-delay="0">
+            <span>Core Frontend</span>
+            <p>
+              React.js, Next.js, TypeScript, JavaScript ES6+, HTML, CSS, SCSS,
+              Tailwind CSS, Ant Design, responsive UI, accessibility basics.
+            </p>
+          </article>
+          <article class="skill-panel fade-in" data-delay="100">
+            <span>State & Data</span>
+            <p>
+              Redux Toolkit Query, Redux Saga, Zustand, React Query, RESTful
+              APIs, form workflows, caching, async data handling, error states.
+            </p>
+          </article>
+          <article class="skill-panel fade-in" data-delay="200">
+            <span>Architecture</span>
+            <p>
+              Micro-frontend architecture, reusable component systems, feature
+              ownership, maintainable folder structure, performance-minded UI.
+            </p>
+          </article>
+          <article class="skill-panel fade-in" data-delay="300">
+            <span>Tooling</span>
+            <p>
+              Git, GitHub, GitLab, Storybook, Vite, Webpack, Babel, code review,
+              debugging, documentation, production issue analysis.
+            </p>
+          </article>
+          <article class="skill-panel ai-panel fade-in" data-delay="400">
+            <span>AI-Assisted Workflow</span>
+            <p>
+              Practical use of AI tools such as Codex and Claude to accelerate
+              code review, refactoring, debugging, test ideas, documentation,
+              and technical exploration while keeping final decisions grounded
+              in engineering judgment.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="services-section" id="experience">
+        <h2 class="section-title section-title-dark fade-in" data-y="40">
+          Experience
+        </h2>
+        <div class="experience-meta fade-in" data-y="20">
+          <span>Terralogic LLC</span>
+          <span>Oct 2021 - Present</span>
+        </div>
+        <div class="services-list">
+          <article class="service-item fade-in" data-delay="0">
+            <span class="service-number">01</span>
+            <div>
+              <h3>Company Setup Module</h3>
+              <p>
+                Developed Company Setup Module to configure organizational
+                structure, roles, and default settings for new tenants during
+                onboarding.
+              </p>
+              <strong>React.js, Tailwind CSS, Zustand, TypeScript</strong>
+            </div>
+          </article>
+          <article class="service-item fade-in" data-delay="100">
+            <span class="service-number">02</span>
+            <div>
+              <h3>Ticket Management</h3>
+              <p>
+                Developed a robust platform for employees to submit, track, and
+                resolve payroll, IT, HR, and system-related requests through a
+                centralized workflow.
+              </p>
+              <strong
+                >Next.js, Tailwind CSS, Redux Toolkit Query, TypeScript</strong
+              >
+            </div>
+          </article>
+          <article class="service-item fade-in" data-delay="200">
+            <span class="service-number">03</span>
+            <div>
+              <h3>Timesheet Management</h3>
+              <p>
+                Built a tool to record and manage employee working hours,
+                project contributions, productivity metrics, payroll processing,
+                and performance evaluation.
+              </p>
+              <strong>React.js, Ant Design, SCSS, Redux Saga</strong>
+            </div>
+          </article>
+          <article class="service-item fade-in" data-delay="300">
+            <span class="service-number">04</span>
+            <div>
+              <h3>Admin Portal</h3>
+              <p>
+                Built HR administration interfaces for employee data,
+                organizational policies, system configuration, accurate records,
+                workflows, and access control.
+              </p>
+              <strong
+                >Next.js, Tailwind CSS, Redux Toolkit Query, TypeScript</strong
+              >
+            </div>
+          </article>
+          <article class="service-item fade-in" data-delay="400">
+            <span class="service-number">05</span>
+            <div>
+              <h3>Timeoff & Employee Management</h3>
+              <p>
+                Engineered leave request, approval, contact directory, and
+                organizational hierarchy features to improve transparency and
+                collaboration.
+              </p>
+              <strong>React.js, Next.js, Ant Design, SCSS, Redux Saga</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <h2 class="hero-heading section-title fade-in" data-y="40">Projects</h2>
+        <div class="project-stack">
+          <article class="project-card" data-index="0">
+            <div class="project-top">
+              <span class="project-number">01</span>
+              <span class="project-category">Next.js / Full-stack</span>
+              <h3>CodeShare Demo</h3>
+              <a
+                class="live-button"
+                href="https://snippets-platform.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-showcase">
+              <p>
+                A web-based platform that allows developers to create, manage,
+                and share reusable code snippets with syntax highlighting and
+                language tagging.
+              </p>
+              <span>Next.js, TypeScript, Tailwind CSS, Node.js, MongoDB</span>
+              <img
+                src="assets/code-share.png"
+                alt="CodeShare code snippet sharing platform"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="project-card" data-index="1">
+            <div class="project-top">
+              <span class="project-number">02</span>
+              <span class="project-category">React / E-commerce</span>
+              <h3>Foodelivery Demo</h3>
+              <a
+                class="live-button"
+                href="https://order-food-silk-rho.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-showcase">
+              <p>
+                A responsive food delivery demo application designed to showcase
+                a modern UI/UX for online food ordering.
+              </p>
+              <span>React.js, Tailwind CSS, Node.js, MongoDB</span>
+              <img
+                src="assets/food-delivery.png"
+                alt="Foodelivery demo application"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="project-card" data-index="2">
+            <div class="project-top">
+              <span class="project-number">03</span>
+              <span class="project-category">React / Social</span>
+              <h3>SnapGram Demo</h3>
+              <a
+                class="live-button"
+                href="https://snapgram-eight-lyart.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-showcase">
+              <p>
+                A social media application that allows users to create, edit,
+                like, and save posts through a simple and seamless experience.
+              </p>
+              <span>React.js, Tailwind CSS, Appwrite</span>
+              <img
+                src="assets/snapgram.png"
+                alt="SnapGram social media application"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="project-card" data-index="3">
+            <div class="project-top">
+              <span class="project-number">04</span>
+              <span class="project-category">Next.js / Booking</span>
+              <h3>Airbnb Clone</h3>
+              <a
+                class="live-button"
+                href="https://airbnb-demo-nu-pink.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-showcase">
+              <p>
+                An online booking platform inspired by Airbnb, with property
+                listings, filtering options, and booking flow.
+              </p>
+              <span
+                >Next.js 13 App Router, Tailwind CSS, Prisma, MongoDB,
+                NextAuth</span
+              >
+              <img
+                src="assets/airbnb.png"
+                alt="Airbnb clone booking platform"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="project-card" data-index="4">
+            <div class="project-top">
+              <span class="project-number">05</span>
+              <span class="project-category">Next.js / Template</span>
+              <h3>Camp Booking</h3>
+              <a
+                class="live-button"
+                href="https://camp-booking-kjsn.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-showcase">
+              <p>
+                A modern booking interface for campgrounds, optimized for
+                search, reservation, details, and fast booking actions.
+              </p>
+              <span>Next.js, Tailwind CSS</span>
+              <img
+                src="assets/camp.png"
+                alt="Camp booking template"
+                loading="lazy"
+              />
+            </div>
+          </article>
+
+          <article class="project-card" data-index="5">
+            <div class="project-top">
+              <span class="project-number">06</span>
+              <span class="project-category">Animation</span>
+              <h3>GSAP Animate</h3>
+              <a
+                class="live-button"
+                href="https://animate-gsap.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live Project</a
+              >
+            </div>
+            <div class="project-showcase">
+              <p>
+                A web project showcasing smooth interactive animations,
+                transitions, parallax effects, and scroll-based motion with
+                GSAP.
+              </p>
+              <span>React.js, Tailwind CSS, GSAP</span>
+              <img
+                src="assets/gsap.png"
+                alt="GSAP animation project"
+                loading="lazy"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
     <script src="animations.js"></script>
-</body>
-
+  </body>
 </html>
