@@ -7,48 +7,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260430-senior" />
+    <link rel="stylesheet" href="./styles.css?v=20260921-figma" />
   </head>
   <body>
     <main class="site-shell">
       <section class="hero-section" id="top">
-        <nav class="hero-nav fade-in" data-y="-20">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="mailto:thiensinh127@gmail.com">Contact</a>
+        <nav class="hero-nav fade-in" data-y="-20" aria-label="Primary navigation">
+          <a class="hero-brand" href="#top">Thien Sinh<span>.</span></a>
+          <div class="nav-links">
+            <a href="#projects">Work</a>
+            <a href="#about">About</a>
+            <a href="mailto:thiensinh127@gmail.com">Contact</a>
+          </div>
         </nav>
 
-        <div class="hero-title-wrap fade-in" data-delay="150" data-y="40">
-          <h1 class="hero-heading hero-title">Hi, I'm Sinh</h1>
-        </div>
-
-        <div class="hero-portrait fade-in" data-delay="600" data-y="30">
-          <div
-            class="magnet"
-            data-padding="150"
-            data-strength="3"
-            data-active-transition="transform 0.3s ease-out"
-            data-inactive-transition="transform 0.6s ease-in-out"
-          >
-            <img src="assets/profile-avatar-3d.png" alt="Tran Ba Thien Sinh 3D avatar" />
+        <div class="hero-layout">
+          <div class="hero-intro fade-in" data-delay="120" data-y="28">
+            <p class="eyebrow">Senior Frontend Developer</p>
+            <h1 class="hero-heading hero-title">Hi, I'm<br />Thien Sinh.</h1>
+            <div class="mobile-portrait" aria-hidden="true">
+              <img src="assets/thien-sinh-profile.jpg" alt="" />
+            </div>
+            <p class="hero-copy">I build scalable, accessible React and Next.js products for teams that value clarity, craft, and dependable delivery.</p>
+            <dl class="proof-points" aria-label="Career highlights">
+              <div><dt>4+ years</dt><dd>Enterprise frontend</dd></div>
+              <div><dt>1,000+ users</dt><dd>HR platform delivery</dd></div>
+              <div><dt>5 modules</dt><dd>Product ownership</dd></div>
+            </dl>
+            <div class="hero-actions">
+              <a class="contact-button" href="mailto:thiensinh127@gmail.com">Let's talk <span>→</span></a>
+              <a class="text-link" href="assets/TranBaThienSinh_CV_Frontend.pdf">Download CV</a>
+            </div>
+            <div class="hero-socials" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/tran-thien-sinh" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+              <a href="https://github.com/thiensinh127" target="_blank" rel="noreferrer" aria-label="GitHub">gh</a>
+            </div>
           </div>
-        </div>
 
-        <div class="hero-bottom">
-          <p class="hero-copy fade-in" data-delay="350" data-y="20">
-            frontend developer building scalable React & Next.js products
-          </p>
-          <div class="hero-actions fade-in" data-delay="500" data-y="20">
-            <a class="contact-button" href="mailto:thiensinh127@gmail.com"
-              >Contact Me</a
-            >
-            <a class="text-link" href="assets/TranBaThienSinh_CV_Frontend.pdf"
-              >Resume</a
-            >
+          <div class="hero-portrait fade-in" data-delay="240" data-y="30">
+            <div class="portrait-frame">
+              <img src="assets/thien-sinh-profile.jpg" alt="Tran Ba Thien Sinh" />
+              <span class="portrait-note">Based in Vietnam<br />Available worldwide</span>
+            </div>
           </div>
         </div>
       </section>
@@ -165,25 +168,24 @@
             </p>
           </article>
           <article class="skill-panel ai-panel fade-in" data-delay="400">
-            <span>AI-Assisted Workflow</span>
+            <span>Delivery & Quality</span>
             <p>
-              Practical use of AI tools such as Codex and Claude to accelerate
-              code review, refactoring, debugging, test ideas, documentation,
-              and technical exploration. I use AI as a review and acceleration
-              layer, while keeping architecture and implementation decisions
-              grounded in engineering judgment.
+              Product delivery through code review, debugging, documentation,
+              production issue analysis, release support, and practical
+              collaboration with product, QA, and backend teams.
             </p>
           </article>
         </div>
       </section>
 
       <section class="services-section" id="experience">
+        <p class="section-kicker">Enterprise delivery</p>
         <h2 class="section-title section-title-dark fade-in" data-y="40">
           Experience
         </h2>
         <div class="experience-meta fade-in" data-y="20">
           <span>Terralogic LLC</span>
-          <span>Oct 2021 - Present</span>
+          <span>Oct 2021 - Present · HR platforms for 1,000+ users</span>
         </div>
         <div class="services-list">
           <article class="service-item fade-in" data-delay="0">
@@ -274,7 +276,9 @@
       </section>
 
       <section class="projects-section" id="projects">
-        <h2 class="hero-heading section-title fade-in" data-y="40">Projects</h2>
+        <p class="section-kicker">Independent work</p>
+        <h2 class="hero-heading section-title fade-in" data-y="40">Selected Builds</h2>
+        <p class="project-intro">Product experiments that demonstrate end-to-end frontend craft, from interface design to production deployment.</p>
         <div class="project-stack">
           <article class="project-card" data-index="0">
             <div class="project-top">
