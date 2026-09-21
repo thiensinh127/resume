@@ -21,3 +21,5 @@ assert.match(css, /\.mobile-portrait \{ display: block;/);
 assert.match(css, /\.hero-portrait \{ display: none;/);
 assert.match(css, /\.mobile-portrait img \{[^}]*object-position: center 85%/);
 assert.match(css, /\.proof-points dd \{ display: none;/);
+assert.match(css, /\.proof-points div \{ min-height: 92px; padding: 14px; border: 1px solid #292929; background: #141414; \}/);
+assert.match(css, /white-space: nowrap/);

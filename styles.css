@@ -23,11 +23,10 @@ img { display: block; max-width: 100%; }
 .hero-title, .section-title { font-family: "Bebas Neue"; font-weight: 400; letter-spacing: -.01em; text-transform: uppercase; }
 .hero-title { margin: 20px 0 18px; font-size: clamp(76px, 10vw, 154px); line-height: .86; }
 .hero-copy { max-width: 470px; color: #b8b7b3; font-size: clamp(14px, 1.2vw, 17px); line-height: 1.65; }
-.proof-points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 480px; gap: 14px; margin-top: 32px; }
-.proof-points div { padding-right: 10px; border-right: 1px solid #3a3a3a; }
-.proof-points div:last-child { border-right: 0; }
+.proof-points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 500px; gap: 8px; margin-top: 32px; }
+.proof-points div { min-height: 92px; padding: 14px; border: 1px solid #292929; background: #141414; }
 .proof-points dt { color: var(--accent); font-family: "Bebas Neue"; font-size: clamp(25px, 2.4vw, 35px); letter-spacing: .02em; line-height: 1; }
-.proof-points dd { margin-top: 5px; color: #aaa9a5; font-size: 9px; font-weight: 600; letter-spacing: .08em; line-height: 1.35; text-transform: uppercase; }
+.proof-points dd { margin-top: 6px; color: #aaa9a5; font-size: 9px; font-weight: 600; letter-spacing: .05em; line-height: 1.35; text-transform: uppercase; white-space: nowrap; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 26px; margin-top: 34px; }
 .contact-button { display: inline-flex; align-items: center; gap: 28px; padding: 15px 18px 15px 22px; border-radius: 999px; background: var(--accent); color: var(--ink); font-size: 11px; font-weight: 700; text-transform: uppercase; transition: transform .2s ease, background .2s ease; }
 .contact-button span { font-size: 17px; line-height: 0; }
