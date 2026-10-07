@@ -2,13 +2,11 @@ const marqueeImages = [
   "assets/code-share.png",
   "assets/food-delivery.png",
   "assets/snapgram.png",
-  "assets/airbnb.png",
   "assets/camp.png",
   "assets/gsap.png",
   "assets/code-share.png",
   "assets/food-delivery.png",
   "assets/snapgram.png",
-  "assets/airbnb.png",
   "assets/camp.png",
   "assets/gsap.png",
 ];

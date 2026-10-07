@@ -84,7 +84,7 @@ img { display: block; max-width: 100%; }
 .projects-section .section-kicker { color: var(--accent); }
 .project-intro { max-width: 520px; margin-top: 24px; color: #aaa9a5; font-size: 15px; line-height: 1.65; }
 .project-stack { max-width: 1120px; margin: 50px auto 0; }
-.project-card { margin-bottom: 24px; padding: 24px; border: 1px solid #353535; border-radius: 12px; background: #121212; }
+.project-card { display: block; margin-bottom: 24px; padding: 24px; border: 1px solid #353535; border-radius: 12px; background: #121212; }
 .project-top { display: grid; grid-template-columns: auto 1fr auto; gap: 3px 22px; align-items: center; }
 .project-number { grid-row: span 2; color: var(--accent); }
 .project-category { align-self: end; }
